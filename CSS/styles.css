@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.navbar {
+    max-width: 1200px;
+    display: flex;
+    background-color: #B87BBF;
+    color: aliceblue;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #B87BBF;
+    border: 2px solid black;
+    box-shadow: 0 3px 6px black;
+    padding: 16px;
+    margin: 10px;
+    text-align: start;
+    z-index: 0;
+}
+
+/* Reducir el tamaño de las imágenes en las tarjetas de libros */
+.card .card-img {
+    max-width: 100px; /* Establecer el ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+  
+  
