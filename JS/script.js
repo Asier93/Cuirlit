@@ -1,5 +1,5 @@
 // Término de búsqueda para feminismo transinclusivo y queer
-const searchInput = 'feminismo transinclusivo queer'; 
+const searchInput = 'feminismo transinclusivo queer';
 
 // Construir la URL de la API con el término de búsqueda
 const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchInput)}`;
@@ -39,11 +39,11 @@ function printData(books) {
   </div>
 `;
 
-card.innerHTML = cardContent;
+    card.innerHTML = cardContent;
     main.appendChild(card);
   });
 }
-      
+
 
 
 
