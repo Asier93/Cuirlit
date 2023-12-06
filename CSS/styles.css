@@ -2,19 +2,34 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     padding: 0;
-    background-color: black;
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
+    background-color: #B87BBF;
 }
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  header img {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 20px; /* Espacio a la derecha del logo */
+  }
+  
 
 .navbar {
     max-width: 1200px;
     display: flex;
-    background-color: #B87BBF;
     color: aliceblue;
     padding: 1rem;
     margin: 0 auto;
+    width: 100%;
 }
 
 .container {
@@ -34,13 +49,43 @@ body {
     margin: 10px;
     text-align: start;
     z-index: 0;
-}
-
-/* Reducir el tamaño de las imágenes en las tarjetas de libros */
-.card .card-img {
-    max-width: 100px; /* Establecer el ancho máximo de la imagen */
-    height: auto; /* Altura automática para mantener la proporción */
+    max-width: 540px; /* Establecer el ancho máximo de la tarjeta */
   }
-
   
+  .card .card-img {
+    max-width: 100%; /* Ajustar la imagen al 100% del ancho de su contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px; /* Añadir un borde redondeado a la imagen */
+  }
+  
+  .card-body {
+    padding-left: 20px; /* Añadir espacio al lado izquierdo del cuerpo de la tarjeta */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Ajustar el tamaño del título */
+    margin-bottom: 8px; /* Agregar espacio después del título */
+  }
+  
+  .card-text {
+    margin-bottom: 16px; /* Agregar espacio después del texto */
+  }
+  
+  .text-body-secondary {
+    color: #6c757d; /* Cambiar el color del texto secundario */
+  }
+  
+  /* CSS/styles.css */
+
+@media (max-width: 768px) {
+    .card .card-img {
+      max-width: 100%; /* Ajustar la imagen al 100% del ancho de su contenedor */
+      height: auto; /* Altura automática para mantener la proporción */
+      border-radius: 10px; /* Añadir un borde redondeado a la imagen */
+    }
+  
+    .card-body {
+      padding-left: 0; /* Eliminar el espacio al lado izquierdo del cuerpo de la tarjeta */
+    }
+  }
   
