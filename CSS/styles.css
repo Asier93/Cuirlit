@@ -5,9 +5,8 @@ body {
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  background-color: #B87BBF;
+  background-color: #b87bbf;
 }
-
 
 header {
   display: flex;
@@ -25,19 +24,53 @@ header img {
   /* Espacio a la derecha del logo */
 }
 
-
 .navbar {
   max-width: 1200px;
   display: flex;
+  justify-content: center;
   color: aliceblue;
   padding: 1rem;
   margin: 0 auto;
   width: 100%;
 }
 
+#logo {
+  width: -50%;
+  height: -50%;
+}
+
+/* Estilos para mover el campo de búsqueda a la derecha */
+@media (min-width: 768px) {
+  .navbar .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar .form-inline {
+    margin-left: auto;
+  }
+}
+
+/* Estilo para las tarjetas */
+.card {
+  margin-bottom: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Establecer dos tarjetas por fila en dos columnas */
+@media (min-width: 768px) {
+  .row-cols-1 > * {
+    flex: 0 0 50%; /* Ocupar el 50% del ancho en pantallas grandes */
+    max-width: 50%; /* Máximo ancho del 50% */
+  }
+}
+
 .container {
-  display: grid;
-  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
@@ -45,7 +78,7 @@ header img {
 }
 
 .card {
-  background-color: #B87BBF;
+  background-color: #b87bbf;
   border: 2px solid black;
   box-shadow: 0 3px 6px black;
   padding: 16px;
@@ -88,10 +121,10 @@ header img {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Puedes ajustar la altura según sea necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Puedes ajustar la altura según sea necesario */
 }
 
 /* CSS/styles.css */
