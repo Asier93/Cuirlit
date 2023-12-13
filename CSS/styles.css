@@ -36,7 +36,7 @@ header img {
 }
 
 .container {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -85,6 +85,13 @@ header img {
 .text-body-secondary {
   color: #6c757d;
   /* Cambiar el color del texto secundario */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Puedes ajustar la altura según sea necesario */
 }
 
 /* CSS/styles.css */
