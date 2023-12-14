@@ -1,3 +1,26 @@
+//Menú burger:cerrar
+
+// Espera a que el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+  // Selecciona el botón del menú (Burger) y el contenido del menú desplegable
+  const menuButton = document.querySelector('.navbar-toggler');
+  const menuContent = document.querySelector('.navbar-collapse');
+
+  // Agrega un event listener para detectar clics en cualquier parte del documento
+  document.addEventListener('click', function(event) {
+    // Verifica si el clic no está dentro del botón del menú y del contenido del menú
+    if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+      // Comprueba si el menú está actualmente abierto
+      const isMenuOpen = menuButton.getAttribute('aria-expanded') === 'true';
+      if (isMenuOpen) {
+        // Si el menú está abierto, simula un clic en el botón del menú para cerrarlo
+        menuButton.click();
+      }
+    }
+  });
+});
+
+
 // Término de búsqueda para feminismo transinclusivo y queer
 const searchInput = "feminismo transinclusivo queer";
 
