@@ -34,11 +34,6 @@ header img {
   width: 100%;
 }
 
-#logo {
-  width: -50%;
-  height: -50%;
-}
-
 /* Estilos para mover el campo de búsqueda a la derecha */
 @media (min-width: 768px) {
   .navbar .navbar-collapse {
@@ -52,42 +47,26 @@ header img {
 
   .navbar .form-inline {
     margin-left: auto;
-  }
-}
-
-/* Estilo para las tarjetas */
-.card {
-  margin-bottom: 20px; /* Espacio entre las tarjetas */
-}
-
-/* Establecer dos tarjetas por fila en dos columnas */
-@media (min-width: 768px) {
-  .row-cols-1 > * {
-    flex: 0 0 50%; /* Ocupar el 50% del ancho en pantallas grandes */
-    max-width: 50%; /* Máximo ancho del 50% */
+    display:flex;
   }
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
-  background-color: #b87bbf;
   border: 2px solid black;
   box-shadow: 0 3px 6px black;
   padding: 16px;
-  margin: 10px;
   text-align: start;
   z-index: 0;
-  max-width: 540px;
-  /* Establecer el ancho máximo de la tarjeta */
+  /* Ajusta otros estilos según tu diseño */
 }
+
 
 .card .card-img {
   max-width: 100%;
