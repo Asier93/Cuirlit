@@ -95,6 +95,7 @@ header img {
 .card-text {
   margin-bottom: 16px;
   /* Agregar espacio después del texto */
+  align-items: end;
 }
 
 .text-body-secondary {
@@ -107,7 +108,9 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100px; /* Puedes ajustar la altura según sea necesario */
-}
+  text-align: center; /* Centra el contenido del footer */
+  margin-top: 20px; /* Añade un espacio en la parte superior */
+  }
 
 /* CSS/styles.css */
 

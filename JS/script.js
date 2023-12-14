@@ -145,46 +145,6 @@ function printData(books) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll(".card"); // Obtén todas las tarjetas
-  const cardsPerPage = 6; // Cantidad de tarjetas a mostrar por página
-  const cardContainer = document.getElementById("cardContainer");
-  const pagination = document.getElementById("pagination");
 
-  function displayCards(startIndex, endIndex) {
-    cards.forEach((card, index) => {
-      if (index >= startIndex && index < endIndex) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  }
+//PAGINACIÓN 
 
-  function generatePagination() {
-    const pageCount = Math.ceil(cards.length / cardsPerPage);
-
-    let paginationButtons = "";
-    for (let i = 1; i <= pageCount; i++) {
-      paginationButtons += `<button class="page-link" onclick="changePage(event, ${i})">${i}</button>`;
-    }
-
-    pagination.innerHTML = paginationButtons;
-  }
-
-  function changePage(event, pageNumber) {
-    event.preventDefault(); // Evitar el comportamiento predeterminado del enlace (botón)
-
-    const startIndex = (pageNumber - 1) * cardsPerPage;
-    const endIndex = startIndex + cardsPerPage;
-
-    displayCards(startIndex, endIndex);
-  }
-
-  displayCards(0, cardsPerPage); // Mostrar las primeras tarjetas al cargar la página
-  generatePagination(); // Generar los botones de paginación
-});
-
-//Este código asume que tienes tarjetas con la clase .card. Selecciona todas las tarjetas, establece cuántas tarjetas deseas mostrar por página (`cardsPerPage`), y utiliza estas funciones para mostrar las tarjetas según la página seleccionada.
-//El script creará los botones de paginación según la cantidad de tarjetas y cambiará la visibilidad de las tarjetas al hacer clic en los botones de paginación.
-//Asegúrate de ajustar y personalizar el código según la estructura real de tus tarjetas y su cantidad. Además, considera que este ejemplo es una paginación simple y puedes mejorarla o modificarla según tus necesidades específicas.
