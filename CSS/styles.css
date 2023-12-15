@@ -53,10 +53,9 @@ header img {
     display:flex;
   }
 }
-
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Dos columnas de igual tamaño */
   gap: 20px;
   padding: 20px;
   margin-top: 50px;
@@ -70,37 +69,33 @@ header img {
   z-index: 0;
 }
 
-
 .card .card-img {
   max-width: 100%;
-  /* Ajustar la imagen al 100% del ancho de su contenedor */
   height: auto;
-  /* Altura automática para mantener la proporción */
   border-radius: 10px;
-  /* Añadir un borde redondeado a la imagen */
 }
 
 .card-body {
   padding-left: 20px;
-  /* Añadir espacio al lado izquierdo del cuerpo de la tarjeta */
 }
 
 .card-title {
   font-size: 1.25rem;
-  /* Ajustar el tamaño del título */
   margin-bottom: 8px;
-  /* Agregar espacio después del título */
 }
 
 .card-text {
   margin-bottom: 16px;
-  /* Agregar espacio después del texto */
-  align-items: end;
 }
 
 .text-body-secondary {
   color: #6c757d;
-  /* Cambiar el color del texto secundario */
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+  }
 }
 
 footer {
@@ -110,22 +105,9 @@ footer {
   height: 100px; /* Puedes ajustar la altura según sea necesario */
   text-align: center; /* Centra el contenido del footer */
   margin-top: 20px; /* Añade un espacio en la parte superior */
-  }
-
-/* CSS/styles.css */
-
-@media (max-width: 768px) {
-  .card .card-img {
-    max-width: 100%;
-    /* Ajustar la imagen al 100% del ancho de su contenedor */
-    height: auto;
-    /* Altura automática para mantener la proporción */
-    border-radius: 10px;
-    /* Añadir un borde redondeado a la imagen */
-  }
-
-  .card-body {
-    padding-left: 0;
-    /* Eliminar el espacio al lado izquierdo del cuerpo de la tarjeta */
-  }
+  bottom: 0; /* Posiciona el footer en la parte inferior */
+  left: 0; /* Alinea el footer a la izquierda */
+  right: 0; /* Alinea el footer a la derecha */
+  background-color: #f8f9fa; /* Cambia el color de fondo del footer */
+  width: 100%; /* Asegura que el footer ocupe todo el ancho */
 }
