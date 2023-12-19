@@ -19,4 +19,7 @@ Se han utilizado estas tecnologías para el desarrollo de la página web y su in
 🚀 Bootstrap:
 Se ha empleado Bootstrap para mejorar el diseño y la estructura del sitio.
 
+🟠 Postman:
+Ha facilitado la gestión de la consulta y consumo de la API.
+
 
