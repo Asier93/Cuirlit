@@ -16,7 +16,7 @@ TECNOLOGÍAS UTILIZADAS
 🔧 HTML, CSS, y Javascript
 Se han utilizado estas tecnologías para el desarrollo de la página web y su interactividad.
 
-🚀 Bootstrap/SASS:
-Se ha empleado Bootstrap/SASS para mejorar el diseño y la estructura del sitio.
+🚀 Bootstrap:
+Se ha empleado Bootstrap para mejorar el diseño y la estructura del sitio.
 
 
