@@ -7,24 +7,20 @@ body {
   box-sizing: border-box;
 }
 
-
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
   width: 100%;
-  background-color: #f8f9fa; /* Color de fondo del encabezado */
-  padding: 10px 0; /* Añade relleno interno superior e inferior */ 
+  background-color: #f8f9fa;
+  padding: 10px 0;
 }
 
 header img {
   max-width: 100px;
-  /* Ajusta el tamaño máximo del logo */
   height: auto;
-  /* Mantiene la proporción */
   margin-right: 20px;
-  /* Espacio a la derecha del logo */
 }
 
 .navbar {
@@ -37,7 +33,6 @@ header img {
   width: 100%;
 }
 
-/* Estilos para mover el campo de búsqueda a la derecha */
 @media (min-width: 768px) {
   .navbar .navbar-collapse {
     display: flex;
@@ -50,12 +45,12 @@ header img {
 
   .navbar .form-inline {
     margin-left: auto;
-    display:flex;
+    display: flex;
   }
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Dos columnas de igual tamaño */
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
   margin-top: 50px;
@@ -94,7 +89,7 @@ header img {
 
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -102,12 +97,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; /* Puedes ajustar la altura según sea necesario */
-  text-align: center; /* Centra el contenido del footer */
-  margin-top: 20px; /* Añade un espacio en la parte superior */
-  bottom: 0; /* Posiciona el footer en la parte inferior */
-  left: 0; /* Alinea el footer a la izquierda */
-  right: 0; /* Alinea el footer a la derecha */
-  background-color: #f8f9fa; /* Cambia el color de fondo del footer */
-  width: 100%; /* Asegura que el footer ocupe todo el ancho */
+  height: 100px;
+  text-align: center;
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  width: 100%;
 }

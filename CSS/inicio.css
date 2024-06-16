@@ -5,56 +5,38 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* Alineación vertical */
   height: 100vh;
 }
 
 .logo {
   width: 150px;
-  /* Ancho de la imagen */
   height: auto;
-  /* Altura automática para mantener la proporción */
   margin-bottom: 20px;
-  /* Espacio debajo de la imagen */
 }
 
 form {
   width: 300px;
-  /* Ancho del formulario */
   padding: 20px;
-  /* Espacio interno del formulario */
 }
 
-/* Reducir el espacio entre los elementos del formulario */
 .form-group {
   margin-bottom: 15px;
-  /* Espacio entre los campos del formulario */
 }
 
-/* Reducir el espacio entre el checkbox y los campos de entrada */
 .form-group.form-check {
   margin-bottom: 10px;
-  /* Espacio entre el checkbox y los campos de entrada */
 }
 
-/* Estilizar el botón para que sea de color morado oscuro y ocupe el mismo ancho que los otros campos del formulario */
 .btn-primary {
   background-color: #6f42c1 !important;
-  /* Color morado oscuro */
   width: 100%;
-  /* Ocupar todo el ancho disponible */
   margin-top: 20px;
-  /* Espacio entre el último campo y el botón */
   opacity: 80%;
   transition: opacity 0.3s ease;
-  /* Agregar transición para suavizar el cambio de opacidad */
   border: none;
-  /* Eliminar el borde */
   outline: none;
-  /* Eliminar el contorno al hacer clic */
 }
 
-/* Cambiar la opacidad al pasar el ratón sobre el botón */
 .btn-primary:hover {
   opacity: 100%;
 }
