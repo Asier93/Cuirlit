@@ -27,7 +27,9 @@ header img {
 
 /* Estilos para la barra de navegación */
 .navbar {
-  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 1200px; /* Ancho máximo del navbar */
+  margin: 0 auto; /* Centra el navbar horizontalmente */
+  padding: 1rem 20px; /* Añade un espacio de 20px arriba y abajo */
   background-color: #c8bff3;
 }
 
