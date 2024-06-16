@@ -1,20 +1,22 @@
+/* Estilos para el cuerpo de la página */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
 }
 
+/* Estilos para la cabecera */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px; /* Añade un espacio de 10px arriba y abajo, 20px a cada lado */
   width: 100%;
-  background-color: #f8f9fa;
-  padding: 10px 0;
+  background-color: #c8bff3; /* Color de fondo morado */
+  color: white; /* Texto en color blanco para contraste */
 }
 
 header img {
@@ -23,45 +25,118 @@ header img {
   margin-right: 20px;
 }
 
+/* Estilos para la barra de navegación */
 .navbar {
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  color: aliceblue;
-  padding: 1rem;
-  margin: 0 auto;
-  width: 100%;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  background-color: #c8bff3;
 }
 
-@media (min-width: 768px) {
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Espacio entre elementos de menú */
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+.navbar .nav-link {
+  color: #482200; /* Texto color marrón */
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+  margin-right: 20px; /* Espacio horizontal entre los enlaces */
+}
+
+.navbar .nav-link:hover {
+  color: #ffffea; /* Color de texto amarillo al pasar el mouse */
+}
+
+/* Estilos para el botón de búsqueda */
+.navbar .btn-outline-success {
+  color: #482200; /* Texto color marrón */
+  border-color: #ffc107; /* Borde color amarillo */
+  background-color: #ffc107; /* Fondo color amarillo */
+}
+
+.navbar .btn-outline-success:hover {
+  background-color: #e29400; /* Fondo color naranja en hover */
+  color: #482200; /* Texto color marrón en hover */
+  border-color: #e29400; /* Borde color naranja en hover */
+}
+
+/* Estilos para el botón de hamburguesa */
+.navbar-toggler {
+  border-color: #ffc107; /* Borde color amarillo */
+  padding: 0.25rem 0.5rem; /* Añadir padding para dar espacio al ícono */
+}
+
+.navbar-toggler-icon {
+  color: #ffc107; /* Color del icono amarillo */
+  font-size: 1.5rem; /* Tamaño del ícono */
+}
+
+.navbar-toggler:hover {
+  background-color: #ffc107; /* Fondo color amarillo en hover */
+  border-color: #ffc107; /* Borde color amarillo en hover */
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5); /* Sombra de enfoque amarilla */
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 992px) {
   .navbar .navbar-collapse {
     display: flex;
     justify-content: space-between;
   }
 
   .navbar .navbar-nav {
-    flex-direction: row;
+    flex-direction: row; /* Alinear enlaces en fila */
   }
 
   .navbar .form-inline {
     margin-left: auto;
-    display: flex;
+  }
+
+  .navbar .nav-link {
+    margin-right: 30px; /* Ajuste de espacio horizontal entre los enlaces */
   }
 }
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  margin-top: 50px;
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+
+  /* Centrar elementos de menú en pantallas pequeñas */
+  .navbar .navbar-collapse {
+    text-align: center; /* Centrar contenido en la barra de navegación */
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: column; /* Cambiar a disposición de columna */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+
+  .navbar .nav-item {
+    margin-top: 10px; /* Espacio entre elementos de menú */
+    text-align: center; /* Centrar texto de nav-item */
+  }
 }
 
+/* Estilos para el contenedor principal */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas con el mismo ancho */
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px; /* Margen superior de 20px */
+}
+
+/* Estilos para las tarjetas */
 .card {
-  border: 2px solid black;
-  box-shadow: 0 3px 6px black;
+  border: 2px solid #c8bff3;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   padding: 16px;
   text-align: start;
-  z-index: 0;
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 .card .card-img {
@@ -77,22 +152,19 @@ header img {
 .card-title {
   font-size: 1.25rem;
   margin-bottom: 8px;
+  color: #ac9aeb; /* Color morado para el título */
 }
 
 .card-text {
   margin-bottom: 16px;
+  color: #495057; /* Color de texto más oscuro */
 }
 
 .text-body-secondary {
-  color: #6c757d;
+  color: #6c757d; /* Color de texto secundario */
 }
 
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-}
-
+/* Estilos para el pie de página */
 footer {
   display: flex;
   justify-content: center;
@@ -100,9 +172,23 @@ footer {
   height: 100px;
   text-align: center;
   margin-top: 20px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #f8f9fa;
+  background-color: #c8bff3; /* Color de fondo morado */
+  color: white; /* Texto blanco para contraste */
   width: 100%;
+}
+
+/* Estilos para los enlaces de paginación */
+.pagination .page-link {
+  color: #ffc107; /* Color del texto amarillo */
+  border-color: #ffc107; /* Borde color amarillo */
+}
+
+.pagination .page-link:hover {
+  background-color: #e29400; /* Fondo color amarillo más oscuro en hover */
+  color: #482200; /* Texto color amarillo más oscuro en hover */
+  border-color: #e29400; /* Borde color amarillo en hover */
+}
+
+.pagination .page-link:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5); /* Sombra de enfoque amarilla */
 }
